@@ -1,5 +1,7 @@
-Invoke-WebRequest -Uri 'https://ghproxy.com/https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe' -OutFile $env:tmp\JiYuTrainer.exe # ä¸‹è½½åæåŸŸè½¯ä»¶
-Start-Process -FilePath $env:tmp\JiYuTrainer.exe # å¯åŠ¨åæåŸŸè½¯ä»¶
-sc.exe stop TDFileFilter # å…³é—­æåŸŸç¨‹åºé”
-Remove-Item -Path C:\Windows\System32\GroupPolicy\* # åˆ é™¤è®¡ç®—æœºç»„ç­–ç•¥
+Set-Location $env:TEMP # ÇĞ»»µ½ÁÙÊ±Ä¿Â¼ÏÂ
+Invoke-WebRequest -Uri 'https://ghproxy.com/https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe' -OutFile .\JiYuTrainer.exe # ÏÂÔØ·´¼«ÓòÈí¼ş
+Start-Process -FilePath .\JiYuTrainer.exe # Æô¶¯·´¼«ÓòÈí¼ş
+sc.exe stop TDFileFilter # ¹Ø±Õ¼«Óò³ÌĞòËø
+Remove-Item -Path C:\Windows\System32\GroupPolicy\* # É¾³ı¼ÆËã»ú×é²ßÂÔ
+gpupdate /force # Ë¢ĞÂ×é²ßÂÔ
 Write-Host Complete!
