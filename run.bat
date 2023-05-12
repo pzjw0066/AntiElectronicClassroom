@@ -1,8 +1,8 @@
 @echo off
-cd %temp% & rem åˆ‡æ¢åˆ°ä¸´æ—¶ç›®å½•ä¸‹
-curl https://ghproxy.com/https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe -o .\JiYuTrainer.exe & rem ä¸‹è½½åæåŸŸè½¯ä»¶
-start "" .\JiYuTrainer.exe & rem å¯åŠ¨åæåŸŸè½¯ä»¶
-sc stop TDFileFilter & rem å…³é—­æåŸŸç¨‹åºé”
-del /S /Q C:\Windows\System32\GroupPolicy\* & rem åˆ é™¤è®¡ç®—æœºç»„ç­–ç•¥
-gpupdate /force & rem åˆ·æ–°ç»„ç­–ç•¥
+cd %temp% & rem ÇĞ»»µ½ÁÙÊ±Ä¿Â¼ÏÂ
+curl https://ghproxy.com/https://github.com/imengyu/JiYuTrainer/releases/download/1.7.6/JiYuTrainer.exe -o .\JiYuTrainer.exe & rem ÏÂÔØ·´¼«ÓòÈí¼ş
+start "" .\JiYuTrainer.exe & rem Æô¶¯·´¼«ÓòÈí¼ş
+sc stop TDFileFilter & rem ¹Ø±Õ¼«Óò³ÌĞòËø
+del /S /Q C:\Windows\System32\GroupPolicy\* & rem É¾³ı¼ÆËã»ú×é²ßÂÔ
+gpupdate /force & rem Ë¢ĞÂ×é²ßÂÔ
 echo complete!
