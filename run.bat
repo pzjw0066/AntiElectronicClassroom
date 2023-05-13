@@ -6,3 +6,4 @@ sc stop TDFileFilter & rem 关闭极域程序锁
 del /S /Q C:\Windows\System32\GroupPolicy\* & rem 删除计算机组策略
 gpupdate /force & rem 刷新组策略
 echo complete!
+pause

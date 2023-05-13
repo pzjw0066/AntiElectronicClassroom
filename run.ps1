@@ -5,3 +5,4 @@ sc.exe stop TDFileFilter # 关闭极域程序锁
 Remove-Item -Path C:\Windows\System32\GroupPolicy\* # 删除计算机组策略
 gpupdate /force # 刷新组策略
 Write-Host Complete!
+Read-Host -Prompt "按回车键以继续"
